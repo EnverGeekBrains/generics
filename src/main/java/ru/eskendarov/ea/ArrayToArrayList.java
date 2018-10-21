@@ -2,6 +2,7 @@ package ru.eskendarov.ea;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.List;
 
 /**
  * Написать метод, который преобразует массив в ArrayList.
@@ -13,8 +14,8 @@ public class ArrayToArrayList {
         Integer[] ints = new Integer[]{1, 2, 3, 4, 5, 6, 7, 8, 9};
         String[] strings = new String[]{"Один", "Два", "Три", "Четыре"};
 
-        ArrayList<Integer> integerArrayList = toArrayList(ints);
-        ArrayList<String> stringArrayList = toArrayList(strings);
+        List<Integer> integerArrayList = toArrayList(ints);
+        List<String> stringArrayList = toArrayList(strings);
 
         System.out.println(integerArrayList);
         System.out.println(stringArrayList);
@@ -22,9 +23,9 @@ public class ArrayToArrayList {
     }
 
     //  Метод преобразует массив с объектами ссылочного типа в ArrayList.
-    private static <T> ArrayList<T> toArrayList(T[] array) {
+    private static <T> List<T> toArrayList(T[] array) {
         System.out.println(array.getClass().getName());
-        final ArrayList<T> result = new ArrayList<>();
+        final List<T> result = new ArrayList<>();
         Collections.addAll(result, array);
         return result;
     }
