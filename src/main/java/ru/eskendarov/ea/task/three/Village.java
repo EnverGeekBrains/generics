@@ -18,21 +18,21 @@ package ru.eskendarov.ea.task.three;
 
 public class Village {
     public static void main(String[] args) {
-        Apple apple1 = new Apple();
-        Apple apple2 = new Apple();
-        Apple apple3 = new Apple();
-        Apple apple4 = new Apple();
-        Apple apple5 = new Apple();
-        Apple apple6 = new Apple();
+        final Apple apple1 = new Apple();
+        final Apple apple2 = new Apple();
+        final Apple apple3 = new Apple();
+        final Apple apple4 = new Apple();
+        final Apple apple5 = new Apple();
+        final Apple apple6 = new Apple();
 
-        Box<Apple> appleBox1 = new Box<>();
+        final Box<Apple> appleBox1 = new Box<>();
         appleBox1.add(apple1, apple2, apple3, apple4, apple5, apple6);
 
-        Orange orange1 = new Orange();
-        Orange orange2 = new Orange();
-        Orange orange3 = new Orange();
+        final Orange orange1 = new Orange();
+        final Orange orange2 = new Orange();
+        final Orange orange3 = new Orange();
 
-        Box<Orange> orangeBox1 = new Box<>();
+        final Box<Orange> orangeBox1 = new Box<>();
         orangeBox1.add(orange1, orange2, orange3);
 
 //        Уравним вес коробок
@@ -44,10 +44,10 @@ public class Village {
         boolean b = appleBox1.compare(orangeBox1);
         System.out.println(b);
 
-        Box<Apple> appleBox2 = new Box<>();
-        Box<Orange> orangeBox2 = new Box<>();
+        final Box<Apple> appleBox2 = new Box<>();
+        final Box<Orange> orangeBox2 = new Box<>();
 
-        Farmer farmer = new Farmer();
+        final Farmer farmer = new Farmer();
         farmer.shiftFruits(appleBox1, appleBox2);
         farmer.shiftFruits(orangeBox1, orangeBox2);
 
