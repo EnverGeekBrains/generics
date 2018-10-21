@@ -78,7 +78,7 @@
                     <archive>
                         <manifest>
                             <addClasspath>true</addClasspath>
-                            <mainClass>ru.eskendarov.ea.App</mainClass>
+                            <mainClass>ru.eskendarov.ea.task.three.Village</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
