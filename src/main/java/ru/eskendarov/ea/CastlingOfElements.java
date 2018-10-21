@@ -13,10 +13,10 @@ import java.util.List;
 public class CastlingOfElements {
 
     public static void main(String[] args) {
-        List<String> strings = new ArrayList<>(Arrays.asList("Ночь", "Улица",
+        final List<String> strings = new ArrayList<>(Arrays.asList("Ночь", "Улица",
                 "Фонарь", "Аптека", "Задача", "Книга", "Библиотека"));
 
-        List<Integer> integers = new ArrayList<>(Arrays.asList(-244, 566, 35, 0, -200, 446, 324, 2));
+        final List<Integer> integers = new ArrayList<>(Arrays.asList(-244, 566, 35, 0, -200, 446, 324, 2));
 
         System.out.println(strings);
         toSwap(strings, 3, 6);
